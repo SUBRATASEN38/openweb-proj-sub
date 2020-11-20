@@ -1,1 +1,24 @@
-<p>four-product works!</p>
+<div class="grid-part-fp">
+    <div class="grid-part-fp" *ngFor="let a of [0,1,2,3]">
+        <div class="img-part p-4">
+            <img class="img-fluid" src="assets/images/watch.png" alt="">
+        </div>
+
+        <div class="text-part p-4">
+            <p class="primary-l text-uppercase">Smart Phone</p>
+            <h6 class="text-uppercase">Smart Watches {{a + 1 > 9 ? a+1 : '0' + (a+1)}}</h6>
+            <p class="flex-center justify-content-between my-3 font-weight-bold">
+                <span>$ 630.00</span>
+                <span class="primary-l text-uppercase">19% Off</span>
+            </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </div>
+
+        <div class="overlay flex-center">
+            <div class="btn-holder d-flex flex-column">
+                <button class="btn btn-secondary">Learn More</button>
+                <button class="btn btn-primary mt-2">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>

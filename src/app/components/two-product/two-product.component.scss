@@ -1,0 +1,25 @@
+.grid-part-tp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    .grid-part-tp {
+        background-color: white;
+        display: grid;
+        grid-template-columns: 0.85fr 1.15fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .grid-part-tp {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .grid-part-tp {
+        .grid-part-tp {
+            grid-template-columns: 1fr;
+        }
+    }
+}

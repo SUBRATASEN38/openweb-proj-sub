@@ -17,10 +17,71 @@ p {
     margin: 0;
 }
 
-.header {
-    height: 120px;
+a {
+    text-decoration: none !important;
 }
 
 .main-content-area {
-    height: calc(100vh - 120px);
+    padding-top: 120px;
+    min-height: calc(100vh - 120px);
+}
+
+// Common class
+
+.big-text {
+    font-weight: 1000;
+    font-size: 4rem;
+}
+
+.btn {
+    font-size: 0.8rem;
+    border-radius: 40px;
+    box-shadow: unset !important;
+    &.btn-lg {
+        padding: 0.8rem 1.4rem;
+    }
+
+    &.btn-primary {
+        background-color: $primary !important;
+        border-color: $primary !important;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $primary-l !important;
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $grey-d;
+        border-color: $grey-d !important;
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $grey !important;
+            background-color: $grey !important;
+        }
+    }
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// colors
+.primary-l {
+    color: $primary-l;
+}
+
+// bg-colors
+
+.bg-grey-l {
+    background-color: $grey-l;
+}
+
+@media (max-width: 767px) {
+    .big-text {
+        font-size: 2.5rem;
+    }
 }

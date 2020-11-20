@@ -1,1 +1,59 @@
-<header class="header"></header>
+<header class="header">
+    <div class="top-part d-flex justify-content-between">
+        <div class="left d-flex align-items-stretch">
+            <div class="box flex-center py-2 px-4">
+                <a href="tel:88200282"><span class="font-weight-bold">Contact Us:</span> 88200282</a>
+            </div>
+            <div class="box flex-center py-2 px-4">
+                <a href="mailTo:abc@abc.com"><span class="font-weight-bold">Mail Us:</span> abc@abc.com</a>
+            </div>
+        </div>
+
+        <div class="right d-flex align-items-stretch">
+            <div class="box flex-center py-2 px-4">
+                <a class="text-uppercase" href="javascript:void(0)">Login / Register</a>
+            </div>
+            <div class="box flex-center py-2 px-4">
+                <a href="javascript:void(0)"><i class="fas fa-heart"></i></a>
+            </div>
+            <div class="box flex-center py-2 px-4">
+                <a class="text-uppercase" href="javascript:void(0)">Your Bag <i
+                        class="ml-2 fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-part d-flex align-items-center">
+        <nav class="nav flex-center justify-content-between">
+            <a class="logo" href="javascript:void(0)"><img src="assets/images/logo.png" alt=""></a>
+            <div class="d-flex align-items-center">
+                <div class="mobile-part" id="mobile-part" #mobilePart (click)="closeMenu($event, mobilePart)">
+                    <ul class="d-flex">
+                        <li class="mobile-menu"><a href="javascript:void(0)"><img src="assets/images/logo.png"
+                                    alt=""></a>
+                        </li>
+                        <li><a class="text-uppercase font-weight-bold" href="javascript:void(0)">About Us</a> </li>
+                        <li><a class="text-uppercase font-weight-bold" href="javascript:void(0)">Shop</a> </li>
+                        <li><a class="text-uppercase font-weight-bold" href="javascript:void(0)">Products</a> </li>
+                        <li><a class="text-uppercase font-weight-bold" href="javascript:void(0)">Services</a> </li>
+                        <li><a class="text-uppercase font-weight-bold" href="javascript:void(0)">Blogs</a> </li>
+                        <li><a class="text-uppercase font-weight-bold" href="javascript:void(0)">Gallery</a> </li>
+                        <li><a class="text-uppercase font-weight-bold" href="javascript:void(0)">Contact</a> </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <a class="inline-block" href="javascript:void(0)"><i class="fas fa-search"></i> </a>
+                    <a class="inline-block ml-2 mobile-menu" href="javascript:void(0)"><i class="fas fa-heart"></i> </a>
+                    <a class="inline-block ml-2 mobile-menu" href="javascript:void(0)"><i
+                            class="fas fa-shopping-bag"></i> </a>
+                    <a class="inline-block ml-2 mobile-menu" href="javascript:void(0)"> <i class="fas fa-user-alt"></i>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="menu-open flex-center" (click)="openMenu(mobilePart)">
+        <i class="fas fa-arrow-left"></i>
+    </div>
+</header>

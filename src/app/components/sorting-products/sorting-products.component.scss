@@ -1,0 +1,26 @@
+@import "../../../non-prod/variable.scss";
+.sorting-holder {
+    overflow: auto;
+
+    .flex-part {
+        margin-left: auto;
+    }
+}
+a {
+    padding: 20px;
+    color: $grey-d;
+    font-size: 1.2rem;
+    position: relative;
+    &:hover {
+        color: $grey;
+    }
+
+    &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 20px;
+        height: calc(100% - 40px);
+        border-left: 2px solid $grey;
+    }
+}
