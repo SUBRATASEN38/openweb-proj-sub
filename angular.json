@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "project-job"
+    }
+  },
+  "defaultProject": "project-job",
+  "cli": {
+    "analytics": false
+  }
 }
